@@ -1,0 +1,18 @@
+package DemoOnSpring.DemoOnSpringS7;
+
+public class AutowiredXMLCarClass {
+	//one class is injected in another class
+	AutowiredXMLEngineClass engine;
+	//Generate setter method
+	public void setEngine(AutowiredXMLEngineClass engine) {
+		this.engine = engine;
+	}
+	void drive() {
+		engine.start();
+		System.out.println("Car is running");
+	}
+	
+	
+	
+
+}
